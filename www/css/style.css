@@ -1,0 +1,64 @@
+body {
+    font-family: Raleway, sans-serif;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+#login {
+    background-color: white;
+    
+    height: 100vh;
+    width: 100vw;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sample-img {
+    width: 100%;
+}
+
+.button-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.button-header {
+    color: #125688;
+    
+    text-align: center;
+    
+    width: 300px;
+    
+    margin-bottom: 15px;
+}
+
+.insta-button {
+    background-color: #125688;
+    color: white;
+    
+    width: 300px;
+    height: 65px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    border-radius: 5px;
+}
+
+.insta-button img {
+    height: 30px;
+    width: 30px;
+}
+
+.insta-label {
+    font-size: 19px;
+    font-family: "Raleway Thin", sans-serif;
+    font-weight: 100;
+    
+    margin-left: 15px;
+}

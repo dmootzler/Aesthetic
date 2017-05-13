@@ -1,0 +1,19 @@
+@font-face {
+    font-family: Open Sans;
+    src: "url(../fonts/OpenSans-Light.ttf)" format("truetype");
+}
+
+@font-face {
+    font-family: Roboto;
+    src: "url(../fonts/Roboto.ttf)";
+}
+
+@font-face {
+    font-family: "Roboto Light";
+    src: "url(../fonts/Roboto-Light.ttf)";
+}
+
+@font-face {
+    font-family: "Raleway Thin";
+    src: "fonts/Raleway-Thin.ttf";
+}
