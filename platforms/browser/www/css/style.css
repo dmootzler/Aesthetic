@@ -4,12 +4,18 @@ body {
     letter-spacing: 1px;
 }
 
-#login {
+.screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    
     background-color: white;
     
     height: 100vh;
     width: 100vw;
-    
+}
+
+#login {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -61,4 +67,29 @@ body {
     font-weight: 100;
     
     margin-left: 15px;
+}
+
+#feed {
+    display: none;
+}
+
+.feed-wrapper {
+    width: 100vw;
+}
+
+.feed-row {
+    width: 100vw;
+    height: 33.33vw;
+    
+    display: flex;
+}
+
+.feed-item {
+    margin: 1px;
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    flex-grow: 1;
 }
