@@ -1,4 +1,5 @@
 $(function() {
+    FastClick.attach(document.body);
     buildListeners();
 });
 
@@ -33,13 +34,12 @@ function parseFeed(data) {
     // number of rows parsed already
     var rowCount = 1;
     // create the first row
-    $(".feed-wrapper").append("<div class='feed-row' id='feed-row-1'></div>");
+    $(".feed-wrapper").append("<div class='feed-row' id='feed-row-1'><div class='feed-item' id='feed-item-0'></div></div>");
     // add each image to a row
-    for(var i = 0; i < data.length; i++) {
-
+    for(var i = 1; i < data.length + 1; i++) {
         // add the image
         $("#feed-row-" + rowCount).append("<div class='feed-item' id='feed-item-" + i + "'></div>");
-        $("#feed-item-" + i).css("background-image", "url(" + data[i].images.standard_resolution.url + ")");
+        $("#feed-item-" + i).css("background-image", "url(" + data[i - 1].images.standard_resolution.url + ")");
         // check if the row is full
         if((i + 1) % 3 == 0 && i + 1 < data.length) {
             rowCount++;
@@ -52,6 +52,6 @@ function parseFeed(data) {
 
 function loadFeed() {
     $("#login").css("display", "none");
-    $("#feed").css("display", "block");
+    $("#feed").css("display", "flex");
 }
 
