@@ -2,10 +2,10 @@
 <widget id="com.osdvfx.aesthetic" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Insta-Aesthetic</name>
     <description>
-        A blank PhoneGap app.
+        A simple way to manage and preview your Instagram aesthetic without posting anything.
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+    <author email="support@osdvfx.com" href="aesthetic.osdvfx.com">
+        myAesthetic Team
     </author>
     <content src="index.html" />
     <access origin="*" />
