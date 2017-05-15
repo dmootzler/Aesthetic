@@ -9,7 +9,14 @@
     "installed_plugins": {
         "cordova-plugin-inappbrowser": {
             "PACKAGE_NAME": "com.osdvfx.aesthetic"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "com.osdvfx.aesthetic"
         }
     },
-    "dependent_plugins": {}
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.osdvfx.aesthetic"
+        }
+    }
 }

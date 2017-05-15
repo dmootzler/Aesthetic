@@ -26,7 +26,7 @@
         </div>
         
         <div class="screen" id="feed">
-            <div class="profile-header">
+            <div class="profile-header unclickable">
                 username
             </div>
             <div class="scroll-wrapper">
@@ -38,7 +38,7 @@
                             </div>
                             <div class="profile-stats">
                                 <div class="profile-stats-bar">
-                                    <div class="profile-stat">
+                                    <div class="profile-stat unclickable">
                                         <div class="profile-num" id="profile-stat-posts">
                                             322
                                         </div>
@@ -46,7 +46,7 @@
                                             posts
                                         </div>
                                     </div>
-                                    <div class="profile-stat">
+                                    <div class="profile-stat unclickable">
                                         <div class="profile-num" id="profile-stat-followers">
                                             1,808
                                         </div>
@@ -54,7 +54,7 @@
                                             followers
                                         </div>
                                     </div>
-                                    <div class="profile-stat">
+                                    <div class="profile-stat unclickable">
                                         <div class="profile-num" id="profile-stat-following">
                                             1,326
                                         </div>
@@ -63,7 +63,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="profile-follow-bar">
+                                <div class="profile-follow-bar unclickable">
                                     Following
                                 </div>
                             </div>
@@ -74,16 +74,33 @@
                         <div class="profile-bar" id="profile-bio">
                             This is a bio!
                         </div>
-                        <img src="img/instagram%20menu.png">
+                        <img src="img/instagram%20menu.png" class="unclickable">
                     </div>
                 </div>
                 <div class="feed-wrapper">
-
+                    <div class="feed-row" id="feed-row-1">
+                        <div class="feed-item" id="feed-item-0"></div>
+                    </div>
                 </div>
             </div>
-            <img class="profile-bottom" src="img/profile%20bottom.png">
+            <img class="profile-bottom unclickable" src="img/profile%20bottom.png">
+        </div>
+        <div class="screen" id="help">
+            <div id="help-preview">
+                Tap on this picture at any time to change the preview image
+            </div>
+            <div id="help-account">
+                You're currently logged in as <span id="help-name">User Name</span> (@<span id="help-username">User 1</span>)
+            </div>
+            <div id="help-logout">
+                Tap here to log out or connect a different account.
+            </div>
+            <div id="help-close">
+                Swipe left or tap here to close
+            </div>
         </div>
         <script src="js/fastclick.js"></script>
+        <script src="js/Hammer.js"></script>
         <script src="js/keys.js"></script>
         <script type="text/javascript" src="cordova.js"></script>
         <script src="js/jquery-3.1.1.min.js"></script>

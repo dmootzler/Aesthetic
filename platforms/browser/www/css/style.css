@@ -243,3 +243,64 @@ body {
     flex-grow: 0;
     flex-shrink: 0;
 }
+
+#help {
+    display: none;
+    z-index: 3;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    
+    background-color: rgba(0,0,0,0.8);
+}
+
+#help-account {
+    color: rgb(153,153,153);
+    font-size: 17px;
+    
+    text-align: center;
+    
+    padding: 20px;
+}
+
+#help-logout {    
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    
+    background-color: dodgerblue;
+    background-color: transparent;
+    
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid white;
+    max-width: 65vw;
+}
+
+#help-preview {
+    color: dodgerblue;
+    font-size: 12px;
+    text-align: center;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    width: 33.333vw;
+    height: 33.333vw;
+    box-sizing: border-box;
+    
+    border: 1px solid dodgerblue;
+    
+    padding: 3vw;
+}
+
+#help-close {
+    color: white;
+    text-align: center;
+    
+    width: 100%;
+    padding: 10px;
+    margin-top: 100px;
+    background-color: dodgerblue;
+}
