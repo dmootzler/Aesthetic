@@ -17,3 +17,8 @@
     font-family: "Raleway Thin";
     src: "fonts/Raleway-Thin.ttf";
 }
+
+@font-face {
+    font-family: "Roboto Medium";
+    src: "fonts/Roboto-Medium.ttf";
+}

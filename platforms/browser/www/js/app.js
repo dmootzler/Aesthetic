@@ -41,7 +41,7 @@ function parseFeed(data) {
         $("#feed-row-" + rowCount).append("<div class='feed-item' id='feed-item-" + i + "'></div>");
         $("#feed-item-" + i).css("background-image", "url(" + data[i - 1].images.standard_resolution.url + ")");
         // check if the row is full
-        if((i + 1) % 3 == 0 && i + 1 < data.length) {
+        if((i + 1) % 3 == 0 && i < data.length) {
             rowCount++;
             $(".feed-wrapper").append("<div class='feed-row' id='feed-row-" + rowCount + "'></div>");
         }
