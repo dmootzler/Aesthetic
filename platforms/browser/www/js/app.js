@@ -26,6 +26,10 @@ function authenticate() {
         $.get("https://api.instagram.com/v1/users/self/media/recent/?access_token=" + KEYS.ACCESS_TOKEN + "&count=18", function(response) {
             parseFeed(response.data);
         });
+        // request profile information from API
+        $.get("https://api.instagram.com/v1/users/self/?access_token=" + KEYS.ACCESS_TOKEN, function(response) {
+            parseProfile(response.data);
+        });
     });
 }
 
@@ -48,6 +52,18 @@ function parseFeed(data) {
     }
     // reveal the feed UI
     loadFeed();
+}
+
+// load a user's profile information into the UI
+function parseProfile(data) {
+    $(".profile-header").html(data.username);
+    $(".profile-pic").css("background-image", "url(" + data.profile_picture + ")");
+    $("#profile-stat-posts").html(data.counts.media);
+    $("#profile-stat-followers").html(data.counts.followed_by);
+    $("#profile-stat-following").html(data.counts.follows);
+    $("#profile-name").html(data.full_name);
+    $("#profile-bio").html(data.bio);
+    
 }
 
 function loadFeed() {

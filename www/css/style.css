@@ -33,7 +33,7 @@ body {
 }
 
 .button-header {
-    color: #125688;
+    color: gray;
     
     text-align: center;
     
@@ -127,19 +127,20 @@ body {
     color: rgb(38,38,38);
     font-family: "Roboto Medium", sans-serif;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: .5px;
     
     display: flex;
     justify-content: center;
     align-content: center;
+    align-items: center;
     
-    padding: 12px 0;
+    padding: 15px 0;
     margin-top: 15px;
     
     background-image: url(../img/instagram%20nav%20buttons.png);
-    background-size: cover;
-    background-position: center;
+    background-size: contain;
+    background-position: bottom;
 }
 
 .profile-bar {
@@ -158,6 +159,8 @@ body {
     border-radius: 50%;
     
     background-color: dodgerblue;
+    background-size: cover;
+    background-position: center;
 }
 
 .profile-stats {
@@ -211,10 +214,23 @@ body {
     font-size: 15px;
 }
 
+#profile-name {
+    font-weight: 600;
+    padding: 5px 10px;
+    padding-bottom: 2px;
+    font-size: 15px;
+    color: rgb(38,38,38);
+}
+
 #profile-bio {
     letter-spacing: normal;
     font-family: "Roboto Light", sans-serif;
     font-weight: 200;
+    font-size: 15px;
+    padding: 5px 10px;
+    padding-top: 2px;
+    padding-bottom: 15px;
+    color: rgb(38,38,38);
 }
 
 .profile-info  img {
